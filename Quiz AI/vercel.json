@@ -1,14 +1,15 @@
 {
+  "version": 2,
+  "buildCommand": "cd quiz-ai && npm install && npm run build",
+  "outputDirectory": "quiz-ai/dist",
+  "installCommand": "cd quiz-ai && npm install",
   "builds": [
     {
       "src": "quiz-ai/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "quiz-ai/dist"
-      }
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "quiz-ai/$1" }
+    { "src": "/(.*)", "dest": "quiz-ai/dist/$1" }
   ]
 } 
