@@ -6,10 +6,16 @@
   "builds": [
     {
       "src": "quiz-ai/package.json",
-      "use": "@vercel/static-build"
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "quiz-ai/dist/$1" }
-  ]
+  ],
+  "env": {
+    "VITE_API_URL": "https://historical-rambunctious-glass.glitch.me/api"
+  }
 } 
