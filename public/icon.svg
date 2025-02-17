@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Latar belakang dengan gradien -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <!-- Rounded rectangle untuk clip path -->
+    <clipPath id="rounded-corners">
+      <rect x="0" y="0" width="512" height="512" rx="128" ry="128"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background dengan rounded corners -->
+  <g clip-path="url(#rounded-corners)">
+    <rect width="512" height="512" fill="url(#bg-gradient)"/>
+    
+    <!-- Circuit pattern untuk AI effect -->
+    <path d="M128 128 L384 128" stroke="white" stroke-width="4" stroke-opacity="0.1"/>
+    <path d="M128 384 L384 384" stroke="white" stroke-width="4" stroke-opacity="0.1"/>
+    <path d="M128 128 L128 384" stroke="white" stroke-width="4" stroke-opacity="0.1"/>
+    <path d="M384 128 L384 384" stroke="white" stroke-width="4" stroke-opacity="0.1"/>
+    
+    <!-- Brain icon stylized -->
+    <path d="M256 160 
+             C180 160, 140 220, 140 256
+             C140 300, 180 352, 256 352
+             C332 352, 372 300, 372 256
+             C372 220, 332 160, 256 160
+             M256 160 
+             C290 160, 310 180, 310 200
+             M202 200
+             C202 180, 222 160, 256 160"
+          stroke="white" stroke-width="24" fill="none" stroke-linecap="round"/>
+    
+    <!-- Q letter -->
+    <circle cx="256" cy="256" r="80" stroke="white" stroke-width="32" fill="none"/>
+    <path d="M310 310 L340 340" stroke="white" stroke-width="32" stroke-linecap="round"/>
+  </g>
+</svg>
