@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "quiz-ai/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "quiz-ai/dist"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "quiz-ai/$1" }
+  ]
+} 
